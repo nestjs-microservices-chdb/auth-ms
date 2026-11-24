@@ -18,8 +18,6 @@ if (!validSchema.success) {
   throw new Error('Invalid environment variables');
 }
 
-console.log(validSchema.data)
-
 export const envs = {
   port: validSchema.data.PORT,
   natsServers: validSchema.data.NATS_SERVERS,
